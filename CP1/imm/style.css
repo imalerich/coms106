@@ -14,10 +14,6 @@
 	-moz-osx-font-smoothing: grayscale;
  }
 
- #wrapper {
-	 background: white;
- }
-
  h1 {
 	background-image: url("img/pattern.png");
 
@@ -30,10 +26,22 @@
     margin: 0px;
  }
  
- h2 {
-	 line-height: 60px;
-	 min-height: 60px;
-	 font-size: 3em;
+h2 {
+	margin: 0px;
+	line-height: 60px;
+	min-height: 60px;
+	font-size: 3em;
+}
+
+.centeredh2 {
+	width: 100%;
+    background: linear-gradient(-90deg, #0c4863, #345983);
+	text-align: center;
+	padding: 20px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-bottom: 10px;
+	color: white;
 }
 
 .sociallink {
@@ -116,6 +124,7 @@ a:hover.emailref {
 }
 
 #wrapper {
+	background: white;
 	min-width: 900px;
 	max-width: 1280px;
 	margin-left: auto;
@@ -131,6 +140,15 @@ a:hover.emailref {
 	background-size: 360px 480px;
 	width: 360px;
 	height: 480px;
+}
+
+#family {
+	margins: auto;
+	background-image: url("img/family.jpg");
+	background-size: 960px 723px;
+	margin: auto;
+	width: 960px;
+	height: 723px;
 }
 
 #welcome {
@@ -253,4 +271,28 @@ a:hover.info-link {
 	padding-top: 6px;
 	padding-left: 4px;
 	padding-right: 4px;
+}
+
+table {
+	margin: auto;
+	width: 960px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-spacing: 0px;
+}
+
+td, th { 
+	padding: 10px; 
+	height: 50px;
+}
+
+th {
+	text-align: right;
+	font-weight: bolder;
+	font-size: 1.8em;
+	color: #011822;
+}
+
+tr:nth-of-type(odd) {
+	background: #bac4c9;
 }

@@ -29,12 +29,43 @@
 			--><div class="barbutton"><!--
 			--><a href="family.html">Family</a></div><!--
 			--><div class="barbutton"><!--
-			--><a href="contact.html">Contact</a></div>
+			--><a href="music.html">Music</a></div>
         </nav>
 
 		<main>
 		<div id="wrapper">
-			<!-- TODO -->
+			<h2 class="centeredh2">Family</h2>
+			<div id="family"></div>
+			<table>
+				<tr>
+					<th>Tony</th>
+					<td>The oldest of seven, currently living in Japan. Enjoys music and food.</td>
+				</tr>
+				<tr>
+					<th>Phillip</th>
+					<td>The next oldest. Lives in Cedar Rapids, Iowa. Loves video games and movies.</td>
+				</tr>
+				<tr>
+					<th>Sarah</th>
+					<td>My oldest sister, she currently lives in Corpus Christi, Texas working as a Dermatologist.</td>
+				</tr>
+				<tr>
+					<th>Mary</th>
+					<td>An Iowa State Alum, Mary lives in Ohio working in Animal Rehabilitation.</td>
+				</tr>
+				<tr>
+					<th>Carol</th>
+					<td>A diva on the Piano, Carel lives in Spring Texas with my parents.</td>
+				</tr>
+				<tr>
+					<th>Ian</th>
+					<td>This ones me!</td>
+				</tr>
+				<tr>
+					<th>Jimmy</th>
+					<td>The youngest of them all, currently attending school in Cedar Rapids, Iowa with an Engineering focus.</td>
+				</tr>
+			</table>
 		</div>
 
 		</div>
@@ -44,18 +75,4 @@
 				href="mailto:imm@iastate.edu">imm@iastate.edu</a>
         </div>
 	</body>
-
-    <script>
-        window.onscroll = function() { stickNavBar() };
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-
-        function stickNavBar() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
-        } 
-    </script>
 </html>
