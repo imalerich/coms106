@@ -273,7 +273,7 @@ a:hover.info-link {
 	padding-right: 4px;
 }
 
-table {
+#famt table {
 	margin: auto;
 	width: 960px;
 	padding-top: 10px;
@@ -281,18 +281,65 @@ table {
 	border-spacing: 0px;
 }
 
-td, th { 
+#famt td, th { 
 	padding: 10px; 
 	height: 50px;
 }
 
-th {
+#famt th {
 	text-align: right;
 	font-weight: bolder;
 	font-size: 1.8em;
 	color: #011822;
 }
 
-tr:nth-of-type(odd) {
+#famt tr:nth-of-type(odd) {
 	background: #bac4c9;
+}
+
+#musict table {
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-spacing: 0px;
+	width: 960px;
+}
+
+#musict td, #musict th { 
+	padding: 10px; 
+	height: 50px;
+	border-bottom: 1px solid #aaa;
+}
+
+#musict th {
+	text-align: center;
+	font-weight: bolder;
+	font-size: 1.8em;
+	color: black;
+}
+
+#musict a:link {
+	text-decoration: none;
+	color: #266887;
+}
+
+#musict a:visited {
+	text-decoration: none;
+	color: #266887;
+}
+
+#musict a:hover {
+	text-decoration: underline;
+	color: #266887;
+}
+
+.detailtd {
+	text-align: center;
+	font-size: 0.8em;
+	textcolor: #aaa;
+}
+
+.album {
+	width: 110px;
+	height: 110px;
 }
