@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Ian Malerich</title>
+		<meta name="description" content="Ian Malerich Com S 106 CP 1">
+		<meta name="keywords" content="Ian, Malerich, Computer Science, Mathematics">
+		<meta name="author" content="Ian Malerich">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8"/>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+			</script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<header>
+			<h1>Ian Malerich</h1>
+		</header>
+        <nav id="navbar">
+        	<div class="barbutton"><!--
+			--><a href="index.html">Home</a></div><!--
+			--><div class="barbutton"><!--
+			--><a href="projects.html">Projects</a></div><!--
+			--><div class="barbutton"><!--
+			--><a href="resume.html">Resume</a></div><!--
+			--><div class="barbutton"><!--
+			--><a href="family.html">Family</a></div><!--
+			--><div class="barbutton"><!--
+			--><a href="contact.html">Contact</a></div>
+        </nav>
+
+		<main>
+		<div id="wrapper">
+			<div class="project">
+				<div>
+					<h2>imGoban</h2>
+					<h3>Go Playing Software</h3>
+				</div>
+				<div class="info">
+					<a href="https://github.com/imalerich/imgoban/" class="info-link">github</a>
+					<div class="info-skill">C++</div>
+				</div>
+
+				<div class="details">
+					<div class=img-container>
+						<img class="project-img" src="img/19x19.png" alt="19x19 Game">
+						<div class="img-details">
+							Two computers play against each other on a 19x19 board.
+						</div>
+					</div>
+					<div class="project-details">
+						Cross-Platform desktop application for playing the board game Go. This is one of my
+						currently active projects I've continued to develop. Supports any grid size
+						greater than 6x6. Go playing programs, such as GnuGo, can be attached using the custom
+						implementation of the Go Text Protocol.
+						<br/><br/>
+						The application is written in C++ using my Adelie2D game library. Planned features
+						include local networked play, GUI controls to replace the current config files, and
+						a move branch navigator.
+					</div>
+				</div>
+			</div>
+
+			<div class="project">
+				<div>
+					<h2>imRayCaster</h2>
+					<h3>3D RayCaster in CUDA</h3>
+				</div>
+				<div class="info">
+					<a href="https://github.com/imalerich/imRayCaster/" class="info-link">github</a>
+					<div class="info-skill">C++</div>
+					<div class="info-skill">CUDA</div>
+					<div class="info-skill">OpenGL</div>
+				</div>
+
+				<div class="details">
+					<div class=img-container>
+						<img class="project-img" src="img/raycaster.png" alt="19x19 Game">
+						<div class="img-details">
+							A simple scene rendered using assets ripped from Wolfenstein 3D.
+						</div>
+					</div>
+					<div class="project-details">
+						A pretty simple project which implements a ray casting 3D rendering in CUDA.
+						Rendering is done to an OpenGL texture so results can be displayed in real time, allowing
+						the user to navigate the scene. The project could have been written in OpenGL shaders alone,
+						but I wanted the opportunity to experiment with working in CUDA.
+						<br/><br/>
+						Currently supports basic features such as tile based walls, floor, and ceiling. A skybox
+						can be included and displayed via omitted or transparent ceiling tiles. Similarly a lower ground layer can be 
+						included for omitted or transparent floor tiles, allowing for water or lava effects.
+					</div>
+				</div>
+			</div>
+
+			<div class="project">
+				<div>
+					<h2>im3D</h2>
+					<h3>3D Renderer in Pure C</h3>
+				</div>
+				<div class="info">
+					<a href="https://github.com/imalerich/im3d/" class="info-link">github</a>
+					<div class="info-skill">C</div>
+					<div class="info-skill">OpenMP</div>
+				</div>
+				<div class="details">
+					<div class=img-container>
+						<img class="project-img" src="img/war.png" alt="Sample Render">
+						<div class="img-details">
+							A textured model rendered using im3D.
+						</div>
+					</div>
+					<div class="project-details">
+						This 3D renderer implements the triangle rasterization technique, replicating
+						the work that an API such as OpenGL or DirectX would do for you on the GPU. 
+						Unlike imRTCL, this project runs entirely in software on the CPU. 
+						<br/><br/>
+						One of the goals of this project was to minimize the dependencies needed,
+						creating as simple (to compile) of a renderer as possible. To that end, the
+						project is written in pure C, provides its own .obj model importer, and can be 
+						compiled on almost any system out of the box with only a modern C compiler.
+						The project uses the excellent stb image importer library, which provides all
+						functionality in single-file headers. OpenMP is also used to speed up the
+						render time on multi-core CPU's.
+					</div>
+				</div>
+			</div>
+
+			<div class="project">
+				<div>
+					<h2>Kaiju Smash</h2>
+					<h3>Ludum Dare 33 "You are the Monster"</h3>
+				</div>
+				<div class="info">
+					<a href="https://github.com/imalerich/ludumdare33/" class="info-link">github</a>
+					<div class="info-skill">C++</div>
+					<div class="info-skill">Allegro</div>
+				</div>
+
+				<div class="details">
+					<div class=img-container>
+						<img class="project-img" src="img/monster.png" alt="Kaiju Smash">
+						<div class="img-details">
+							The venerable Kaiju smashes his way to victory.
+						</div>
+					</div>
+					<div class="project-details">
+						My entry into Ludum Dare 33 under the theme "You are the Monster," a rather literal
+						interpretation of the events theme. The user controls a glorious Kaiju as he earns points
+						by smashing vehicles in 3 lanes of traffic, while dodging incoming 
+						missiles intended for his demise.
+						<br/><br/>
+						As is the nature of the Ludum Dare game jam, all assets and code were completed over 
+						a 48 hour time period. The game performed reasonably overall in the competition notably
+						making top 100 out of 2725 for graphics/art.
+					</div>
+				</div>
+			</div>
+		</div>
+
+		</div>
+		</main>
+        <div class="footer">
+            &copy; 2017 Ian Malerich: <a class="emailref" 
+				href="mailto:imm@iastate.edu">imm@iastate.edu</a>
+        </div>
+	</body>
+
+    <script>
+        window.onscroll = function() { stickNavBar() };
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function stickNavBar() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        } 
+    </script>
+</html>

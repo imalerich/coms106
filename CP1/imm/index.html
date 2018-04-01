@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Ian Malerich</title>
+		<meta name="description" content="Ian Malerich Com S 106 CP 1">
+		<meta name="keywords" content="Ian, Malerich, Computer Science, Mathematics">
+		<meta name="author" content="Ian Malerich">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8"/>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+			</script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<header>
+			<h1>Ian Malerich</h1>
+		</header>
+        <nav id="navbar">
+        	<div class="barbutton"><!--
+			--><a href="index.html">Home</a></div><!--
+			--><div class="barbutton"><!--
+			--><a href="projects.html">Projects</a></div><!--
+			--><div class="barbutton"><!--
+			--><a href="resume.html">Resume</a></div><!--
+			--><div class="barbutton"><!--
+			--><a href="family.html">Family</a></div><!--
+			--><div class="barbutton"><!--
+			--><a href="contact.html">Contact</a></div>
+        </nav>
+
+		<main>
+		<div id="wrapper">
+		<div id="me"></div>
+		<div id="welcome">
+			<h2>Welcome!</h2>
+			This is my Computer Science 106 Intro to Web Programming
+			Home Page!<br>
+			Here are a couple of facts about me:
+			<ul>
+				<li>Senior in Computer Science and Mathematics at Iowa State University</li>
+				<li>Interested in Graphics Programming and Mobile Development</li>
+				<li>I like to read, run, and skateboard.</li>
+				<li>I shoot archery!</li>
+			</ul><br>
+			And here are some basic social links:<br>
+			<div class="sociallink" style="background: #68C7EC; 
+				padding-left: 0px; padding-right: 0px">
+				<a href="https://www.linkedin.com/in/imalerich/">
+					<img src="img/linkedin.png" alt="LinkedIn" class="socialicon"/>
+				</a>
+			</div>
+            <div class="sociallink" style="background: #d1553c; 
+				padding-left: 0px; padding-right: 0px">
+				<a href="https://github.com/imalerich/">
+					<img src="img/github.png" alt="Github" class="socialicon"/>
+				</a>
+			</div>
+		</div>
+
+		</div>
+		</main>
+        <div class="footer">
+            &copy; 2017 Ian Malerich: <a class="emailref" 
+				href="mailto:imm@iastate.edu">imm@iastate.edu</a>
+        </div>
+	</body>
+
+    <script>
+        window.onscroll = function() { stickNavBar() };
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function stickNavBar() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        } 
+    </script>
+</html>

@@ -1,0 +1,256 @@
+/**
+ * styles.css
+ * 2018 Ian Malerich
+ * imm@iastate.edu
+ */
+
+ body {
+	background: #adb9db;
+	min-width: 100%;
+	margin: 0px;
+
+	font-family: Arial, Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+ }
+
+ #wrapper {
+	 background: white;
+ }
+
+ h1 {
+	background-image: url("img/pattern.png");
+
+    text-align: center;
+    min-width: 100%;
+    min-height: 100px;
+    line-height: 100px;
+	font-weight: lighter;
+    color: white;
+    margin: 0px;
+ }
+ 
+ h2 {
+	 line-height: 60px;
+	 min-height: 60px;
+	 font-size: 3em;
+}
+
+.sociallink {
+	vertical-align: top;
+	text-align: center;
+	margin: 0px;
+
+	border-radius: 6px;
+	display: inline-block;
+	margin-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+    max-height: 40px;
+	color: white;
+}
+
+.socialicon {
+	display: inline-block;
+	height: 28px;
+	object-fit: contain;
+	padding: 6px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+ nav {
+	position: relative;
+    z-index: 100;
+    text-align: center;
+    background: #022B3B;
+    min-width: 100%;
+    min-height: 40px;
+    line-height: 40px;
+ }
+
+.resume {
+	width: 100%;
+}
+
+ .barbutton {
+	vertical-align: top;
+	text-align: center;
+	margin: 0px;
+
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+    max-height: 40px;
+	color: white;
+}
+
+a:link {
+	text-decoration: none;
+	color: white;
+}
+
+a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #a4aec9;
+}
+
+a:link.emailref {
+	text-decoration: none;
+	color: #314850;
+}
+
+a:visited.emailref {
+	text-decoration: none;
+	color: #314850;
+}
+
+a:hover.emailref {
+	text-decoration: underline;
+	color: #314850;
+}
+
+#wrapper {
+	min-width: 900px;
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 480px;
+
+    box-shadow: 0px 0px 40px 0px #466574;
+}
+
+#me {
+	float: left;
+	background-image: url("img/me.jpg");
+	background-size: 360px 480px;
+	width: 360px;
+	height: 480px;
+}
+
+#welcome {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.footer {
+	padding-top: 0px;
+    text-align: center;
+    color: #333;
+    font-size: 0.8em;
+    min-height: 60px;
+    line-height: 60px;
+}
+
+.project {
+	padding: 30px;
+	padding-bottom: 0px;
+}
+
+.project.h3 {
+	margin: 0px;
+	font-size: 0.8em;
+	font-weight: light;
+	color: #666;
+	font-weight: lighter;
+
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 4px;
+    display: inline-block;
+}
+
+.info-skill {
+    text-align: center;
+	font-size: 0.75em;
+
+	border-radius: 6px;
+	background: #888;
+	color: white;
+
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 8px;
+	padding-right: 8px;
+    display: inline-block;
+}
+
+a.info-link {
+	font-size: 0.75em;
+
+	text-decoration: none;
+	color: white;
+	background: #524870;
+
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 8px;
+	padding-right: 8px;
+	border-radius: 6px;
+}
+
+a:link.info-link {
+	text-decoration: none;
+	color: white;
+}
+
+a:visited.info-link {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover.info-link {
+	text-decoration: none;
+	background: #8477aa;
+	color: white;
+}
+
+.info {
+	padding-top: 6px;
+	padding-bottom: 10px;
+	min-width: 100%;
+    box-shadow: 0px 10px 12px -8px #ccc;
+}
+
+.details {
+	padding-top: 12px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.project-details {
+	padding-right: 7px;
+	padding-top: 7px;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.img-container {
+	width: 275px;
+	min-height: 100%;
+	padding: 7px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+
+	background: #cacaca;
+	overflow: hidden;
+	float: right;
+}
+
+.project-img {
+	display: flex;
+	width: 100%;
+}
+
+.img-details {
+	text-align: left;
+	font-size: 0.8em;
+	padding-top: 6px;
+	padding-left: 4px;
+	padding-right: 4px;
+}

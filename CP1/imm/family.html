@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Ian Malerich</title>
+		<meta name="description" content="Ian Malerich Com S 106 CP 1">
+		<meta name="keywords" content="Ian, Malerich, Computer Science, Mathematics">
+		<meta name="author" content="Ian Malerich">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8"/>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+			</script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<header>
+			<h1>Ian Malerich</h1>
+		</header>
+        <nav id="navbar">
+        	<div class="barbutton"><!--
+			--><a href="index.html">Home</a></div><!--
+			--><div class="barbutton"><!--
+			--><a href="projects.html">Projects</a></div><!--
+			--><div class="barbutton"><!--
+			--><a href="resume.html">Resume</a></div><!--
+			--><div class="barbutton"><!--
+			--><a href="family.html">Family</a></div><!--
+			--><div class="barbutton"><!--
+			--><a href="contact.html">Contact</a></div>
+        </nav>
+
+		<main>
+		<div id="wrapper">
+			<!-- TODO -->
+		</div>
+
+		</div>
+		</main>
+        <div class="footer">
+            &copy; 2017 Ian Malerich: <a class="emailref" 
+				href="mailto:imm@iastate.edu">imm@iastate.edu</a>
+        </div>
+	</body>
+
+    <script>
+        window.onscroll = function() { stickNavBar() };
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function stickNavBar() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        } 
+    </script>
+</html>
