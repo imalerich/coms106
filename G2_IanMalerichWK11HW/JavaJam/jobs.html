@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>JavaJam Cofee House Menu</title>
+		<meta name="description" content="JavaJam Coffee House Website">
+		<meta name="keywords" content="Coffee, Java, Jam, Music, Jobs">
+		<meta name="author" content="Ian Malerich">
+		<meta charset="utf-8"/>
+		<meta charset="utf-8"/>
+
+		<link rel="stylesheet" type="text/css" href="javajam.css">
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+			</script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div id="wrapper">
+		<header>
+			<h1>JavaJam Coffee House</h1>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="music.html">Music</a></li>
+				<li><a href="jobs.html">Jobs</a></li>
+			</ul>
+		</nav>
+
+		<main>
+		<div id="heromugs"></div>
+		<h2>Jobs at JavaJam </h2>
+		<p>
+			Want to work at JavaJam? Fill out the form below to start your application.<br>
+			Required fields are marked with an asterisk (*).
+		</p>
+		<form action="http://webdevbasics.net/scripts/javajam8.php" method="post">
+			<label for="myName">*Name:</label><input type="text" name="myName" required="required">
+			<label for="myEmail">*E-mail:</label><input type="email" name="myEmail" required="required">
+			<label for="myExperience">*Experience:</label>
+				<textarea type="text" name="myExperience" rows="2" cols="20" required="required"></textarea>
+			<input type="submit" value="Apply Now" id="mySubmit">
+		</form>
+
+		<br>
+		</main>
+
+		<footer>
+			Copyright &copy; 2016 JavaJam Coffee House <br>
+			<a href="mailto:imm@iastate.edu">imm@iastate.edu</a>
+		</footer>
+		</div>
+	</body>
+</html>
